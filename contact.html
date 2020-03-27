@@ -63,7 +63,53 @@
 
     <main>
         <div class="zoom-content">
-            <section></section>
+            <section>
+                <!-- Contact form -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-7 center">
+                <div class="card form-fill">
+                    <div class="card-header">
+                      Fill in this form
+                    </div>
+                    <div class="card-body">
+                      <blockquote class="blockquote mb-0">
+                        <form class="was-validated">
+                            <div class="mb-3">
+                                <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="Write your full name"required>
+                                <div class="invalid-feedback">
+                                  Please fill in this field.
+                                </div>
+                              </div>
+                            <div class="form-group">
+                                <select class="custom-select" required>
+                                  <option value="" class="placement">Please select an option</option>
+                                  <option value="1">Volunteer</option>
+                                  <option value="2">Proposal: Fundraiser</option>
+                                  <option value="3">Proposal: Business</option>
+                                </select>
+                                <div class="invalid-feedback">Please select an option</div>
+                            </div>
+                            <div class="mb-3">
+                              <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Is there any additional information you think we should know?" required></textarea>
+                            </div>
+                            
+                          
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                              <label class="custom-file-label" for="validatedCustomFile" class="placement">Choose file...</label>
+                              <div class="invalid-feedback">Please upload your completed form</div>
+                            </div>
+
+                            <button class="btn btn-primary for-form" type="submit">Submit form</button>
+                          </form>
+                      </blockquote>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+            </section>
         </div>
     </main>
   
