@@ -147,6 +147,28 @@ section.content {
     top: 150px;
 }
 
+.card.form-fill {
+    margin: 60px;
+    color: #333333;
+    font-size: 1rem;
+}
+
+.card-body {
+    text-align: left;
+}
+
+.card-header {
+    text-align: center;
+}
+
+.btn.btn-primary.for-form {
+    margin-top: 20px;
+}
+
+.custom-select, .custom-file-label {
+    font-size: 1rem;
+}
+
 /* Responsive design */
  
 @media only screen and (max-width: 850px) {
@@ -163,8 +185,13 @@ section.content {
         font-size: 4rem;
     }
 
+    .col-7{
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+
     .col-7.center{
-        left: 25%;
+        left: 9%;
     }
 }
 
