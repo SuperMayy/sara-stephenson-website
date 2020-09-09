@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-y: hidden;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <title>Home</title>
+    <title>Sarah | Contact</title>
 </head>
 <body>
 
@@ -19,27 +19,27 @@
         <nav class="sidebar" id="theSidebar">
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link current">
+                    <a href="index.html" class="nav-link">
                         <i class="fas fa-home"></i>Home
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="about.html" class="nav-link">
                         <i class="fas fa-smile-beam"></i>About
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="contact.html" class="nav-link">
+                    <a href="contact.html" class="nav-link current">
                         <i class="fas fa-envelope"></i>Contact
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="copywriter.html" class="nav-link">
                         <i class="fas fa-file-alt"></i>Copywriter
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="scriptwriter.html" class="nav-link">
                         <i class="fas fa-theater-masks"></i>Scriptwriter
                     </a>
                 </li>
@@ -61,7 +61,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="contact-page">
         <div class="zoom-content">
             <section>
                 <!-- Contact form -->
@@ -88,16 +88,9 @@
                                 <div class="invalid-feedback">Please select an option</div>
                             </div>
                             <div class="mb-3">
-                              <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Is there any additional information you think we should know?" required></textarea>
+                              <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Is there any additional?" required></textarea>
                             </div>
                             
-                          
-                            <div class="custom-file">
-                              <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                              <label class="custom-file-label" for="validatedCustomFile" class="placement">Choose file...</label>
-                              <div class="invalid-feedback">Please upload your completed form</div>
-                            </div>
-
                             <button class="btn btn-primary for-form" type="submit">Submit form</button>
                           </form>
                       </blockquote>

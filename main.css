@@ -12,6 +12,19 @@ html {
 a{
     text-decoration: none;
 }
+h1 {
+    padding-top: 15%;
+    padding-left: 23%;
+    padding-bottom: 3%;
+    /* color: #dd7732; */
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #fff,
+                0 0 80px #fff,
+                0 0 1200px #fff,
+                0 0 160px #fff;
+}
 
 .hamburger{
     position: fixed;
@@ -62,11 +75,11 @@ header::before{
     transition: transform .6s cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
 
-nav-list{
+.nav-list{
     list-style: none;
 }
 
-nav-item{
+.nav-item{
     position: relative;
 }
 
@@ -137,20 +150,23 @@ section.content {
     bottom: 10%;
     left: 30%;
     color: #900c3f;
-    font-size: 10rem;
+    font-size: 8rem;
 }
 
 .col-7.center {
     position: relative;
     left: 33%;
     /* left: 400px; */
-    top: 150px;
+    top: 100px;
 }
 
 .card.form-fill {
     margin: 60px;
     color: #333333;
     font-size: 1rem;
+    border: none;
+    background: transparent;
+    box-shadow: -1px 2px 14px 5px #000000;
 }
 
 .card-body {
@@ -165,8 +181,155 @@ section.content {
     margin-top: 20px;
 }
 
+.btn.btn-primary.for-form {
+    margin-top: 0px;
+    background: transparent;
+    border-color: #fff;
+}
+
 .custom-select, .custom-file-label {
     font-size: 1rem;
+}
+
+form.was-validated {
+    padding: 15px;
+}
+
+.mb-3, .my-3 {
+    margin-bottom: 2rem!important;
+}
+textarea#validationTextarea {
+    padding-bottom: 50px;
+}
+
+.btn.btn-primary.for-form {
+    margin-top: 0px;
+}
+
+.card-header {
+    background-color: transparent;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+main{
+    padding-bottom: 500%;
+    /* this is where you change the background */
+    background: linear-gradient(to right, #141d56 0%, #401435 100%);
+}
+
+input#validationServer03, select.custom-select,textarea#validationTextarea {
+    background: transparent;
+}
+
+/* Changing text */
+.container p {
+    text-align: center;
+} 
+
+.typed-text {
+    color: #fff;
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: #000000;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { background-color: #000000;}
+    49% { background-color: #000000;}
+    50% { background-color: transparent;}
+    99% { background-color: transparent;}
+    100% { background-color: #000000;}
+}
+section.right-content {
+    position: fixed;
+    bottom: 10%;
+    left: 30%;
+}
+/* The copywiter and scriptwiter boxes */
+div.container{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+div.container .card {
+    position: relative;
+    height: 250px;
+    background: #fff;
+    display: flex;
+    width: 30%;
+    margin: 30px;
+}
+img.contentImage {
+    height: 100%;
+}
+
+div.container .card .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+div.container .card:hover .imgBx {
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top: calc(50% -75px);
+    transition: 0.5s ease-in-out; 
+}
+
+/* div.container .card .imgBx:before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 6em;
+    color: rgba(144, 12, 63, 0.5);
+    font-weight: 700;
+
+} */
+
+div.container .card .content-other {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card .content-other h3 {
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+.container .card .content-other a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #333;
+    text-decoration: none;
+    color: #fff;
 }
 
 /* Responsive design */
@@ -182,9 +345,12 @@ section.content {
 
     section.content{
         left: 5%;
-        font-size: 4rem;
+        font-size: 3rem;
     }
-
+    section.right-content {
+        left: 5%;
+        bottom: auto;
+    }
     .col-7{
         flex: 0 0 90%;
         max-width: 90%;
@@ -193,5 +359,39 @@ section.content {
     .col-7.center{
         left: 9%;
     }
+    /* card content from copywriter and script writer */
+    .container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    div.container .card{
+        width: 400px;
+    }
 }
 
+@media only screen and (max-width: 650px) {
+    div.container .card{
+        max-width: 300px;
+        flex-direction: column;
+        height: auto;
+    }
+    div.container .card .imgBx{
+        position: relative;  
+    }
+    div.container .card .imgBx, 
+    div.container .card:hover .imgBx {
+        width: 100%;
+        height: 200px;
+        left: 0;
+        background: none;
+    }
+    div.container .card .imgBx img, 
+    div.container .card:hover .imgBx img {
+        max-width: 110%;
+    }
+    div.container .card .content-other {
+        position: relative;
+        width: 100%;
+    }
+}
