@@ -45,18 +45,18 @@
                 </li>
             </ul>
             <div class="social-media">
-                <a href="#" class="icon-link">
+                <!-- <a href="#" class="icon-link">
                     <i class="fab fa-instagram"></i>
                 </a>
                 <a href="#" class="icon-link">
                     <i class="fab fa-facebook"></i>
-                </a>
-                <a href="#" class="icon-link">
+                </a> -->
+                <a href="https://www.linkedin.com/in/sarahstephenson/" class="icon-link">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="#" class="icon-link">
+                <!-- <a href="#" class="icon-link">
                     <i class="fab fa-twitter"></i>
-                </a>
+                </a> -->
             </div>        
         </nav>
     </header>
@@ -74,21 +74,24 @@
                     </div>
                     <div class="card-body">
                       <blockquote class="blockquote mb-0">
-                        <form class="was-validated">
+                        <form class="was-validated" name="contact" method="POST" data-netlify="true">
                             <div class="mb-3">
-                                <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="Write your full name"required>
+                                <input type="text" name="name" class="form-control is-invalid" id="validationServer03" placeholder="Write your full name"required>
+                              </div>
+                              <div class="mb-3">
+                                <input type="email" name="email" class="form-control is-invalid" id="validationServer03" placeholder="Enter your email"required>
                               </div>
                             <div class="form-group">
-                                <select class="custom-select" required>
+                                <select class="custom-select" name="reason[]" required>
                                   <option value="" class="placement">Please select an option</option>
-                                  <option value="1">Copywriting</option>
-                                  <option value="2">Script writing: Theatre</option>
-                                  <option value="3">Script writing: Audio</option>
+                                  <option value="Copywriting">Copywriting</option>
+                                  <option value="Script writing: Theatre">Script writing: Theatre</option>
+                                  <option value="Script writing: Audio">Script writing: Audio</option>
                                 </select>
                                 <div class="invalid-feedback">Please select an option</div>
                             </div>
                             <div class="mb-3">
-                              <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Is there any additional?" required></textarea>
+                              <textarea class="form-control is-invalid" id="validationTextarea" name="extra" placeholder="Additional info" required></textarea>
                             </div>
                             
                             <button class="btn btn-primary for-form" type="submit">Submit form</button>

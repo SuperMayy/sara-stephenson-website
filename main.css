@@ -263,6 +263,13 @@ section.right-content {
     padding-left: 25%;
 }
 
+.about-content{
+    font-size: 2rem;
+}
+
+.card-text{
+    font-size: 1.2rem;
+}
 /* Responsive design */
  
 @media only screen and (max-width: 850px) {
@@ -330,5 +337,11 @@ section.right-content {
     div.container .card .content-other {
         position: relative;
         width: 100%;
+    }
+    .about-content{
+        font-size: 1.6rem;
+    }
+    .card-text{
+        font-size: 1rem;
     }
 }
